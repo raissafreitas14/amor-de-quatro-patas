@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Amor de Quatro Patas: proteção, cuidado e adoção responsável." />
+    <title>Amor de Quatro Patas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body data-initial-route="inicio">
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="header-inner layout-grid">
+        <a class="brand" href="#/inicio" data-route="inicio" aria-label="Amor de Quatro Patas - início"><span class="brand-mark" aria-hidden="true">♥</span><span>Amor de <strong>Quatro Patas</strong></span></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
+          <ul>
+            <li><a href="#/inicio" data-route="inicio">Início</a></li>
+            <li><a href="#/projetos" data-route="projetos">Projetos</a></li>
+            <li class="has-submenu"><button class="submenu-trigger" type="button" aria-expanded="false">Participe <span aria-hidden="true">⌄</span></button><ul class="submenu"><li><a href="#/cadastro" data-route="cadastro">Seja voluntário</a></li><li><a href="#/projetos" data-route="projetos" data-scroll="doacoes">Faça uma doação</a></li></ul></li>
+          </ul>
+        </nav>
+        <a class="button button-small header-cta" href="#/cadastro" data-route="cadastro">Quero ajudar</a>
+      </div>
+    </header>
+    <main id="conteudo-principal" tabindex="-1"><div id="app" aria-live="polite"></div></main>
+    <footer class="site-footer"><div class="footer-inner layout-grid"><div class="footer-brand"><span class="brand-mark" aria-hidden="true">♥</span><p><strong>Amor de Quatro Patas</strong><br />Cuidado que transforma histórias.</p></div><address><strong>Entre em contato</strong><br />Rua Esperança, 125 - Centro, Salto - SP<br /><a href="tel:+551134567890">(11) 3456-7890</a> · <a href="mailto:contato@amordequatropatas.org">contato@amordequatropatas.org</a></address><p class="footer-copy">© 2026 Amor de Quatro Patas.<br />Todos os direitos reservados.</p></div></footer>
+    <div class="toast-region" aria-live="polite" aria-atomic="true"></div>
+    <div class="modal" id="modal-confirmacao" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-titulo"><div class="modal-backdrop" data-modal-close></div><div class="modal-dialog"><button class="modal-close" type="button" aria-label="Fechar janela" data-modal-close>×</button><span class="modal-icon" aria-hidden="true">♥</span><h2 id="modal-titulo">Confirmar cadastro</h2><p id="modal-mensagem">Deseja enviar seus dados para a ONG?</p><div class="modal-actions"><button class="button button-secondary" type="button" data-modal-close>Cancelar</button><button class="button" type="button" id="modal-confirmar">Confirmar envio</button></div></div></div>
+    <script type="module" src="../js/app.js"></script>
+  </body>
+</html>

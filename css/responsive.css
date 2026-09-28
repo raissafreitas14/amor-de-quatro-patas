@@ -1,0 +1,324 @@
+@media (max-width: 1500px) {
+
+    .hero-inner,
+    .header-inner,
+    .home-intro,
+    .purpose-grid,
+    .contact-panel,
+    .projects-grid,
+    .donation-panel,
+    .form-layout,
+    .page-hero-inner,
+    .footer-inner {
+        width: min(100% - 3rem, 75rem);
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-copy {
+        grid-column: 1 / span 7;
+    }
+
+    .hero-image {
+        grid-column: 7 / -1;
+        opacity: 0.88;
+    }
+
+    .purpose-heading {
+        grid-column: 1 / span 5;
+    }
+
+    .purpose-cards {
+        grid-column: 6 / -1;
+    }
+}
+
+@media (max-width: 960px) {
+    .main-nav {
+        grid-column: 5 / span 6;
+    }
+
+    .header-cta {
+        display: none;
+    }
+
+    .hero {
+        min-height: 31rem;
+    }
+
+    .hero-inner,
+    .hero-image {
+        min-height: 31rem;
+    }
+
+    .intro-copy {
+        grid-column: 1 / span 7;
+    }
+
+    .intro-aside {
+        grid-column: 9 / -1;
+    }
+
+    .purpose-heading {
+        grid-column: 1 / -1;
+    }
+
+    .purpose-cards {
+        grid-column: 1 / -1;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .donation-copy {
+        grid-column: 1 / span 7;
+    }
+
+    .donation-box {
+        grid-column: 8 / -1;
+    }
+
+    .footer-brand {
+        grid-column: 1 / span 5;
+    }
+
+    .site-footer address {
+        grid-column: 6 / -1;
+    }
+
+    .footer-copy {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-inner {
+        min-height: 4.25rem;
+    }
+
+    .brand {
+        grid-column: 1 / span 9;
+        font-size: var(--text-base);
+    }
+
+    .menu-toggle {
+        grid-column: 12;
+        display: block;
+        justify-self: end;
+    }
+
+    .menu-toggle.is-open span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .menu-toggle.is-open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.is-open span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 100%;
+        right: 1rem;
+        left: 1rem;
+        display: none;
+        padding: var(--space-sm);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface);
+        box-shadow: var(--shadow-md);
+    }
+
+    .main-nav.is-open {
+        display: block;
+    }
+
+    .main-nav>ul {
+        display: block;
+    }
+
+    .main-nav a,
+    .submenu-trigger {
+        display: block;
+        width: 100%;
+        padding: var(--space-sm);
+        text-align: left;
+    }
+
+    .submenu {
+        position: static;
+        width: auto;
+        margin-left: var(--space-sm);
+        box-shadow: none;
+    }
+
+    .has-submenu:hover .submenu {
+        display: none !important;
+    }
+
+    .has-submenu.is-open .submenu {
+        display: block !important;
+    }
+
+    .hero,
+    .hero-inner,
+    .hero-image {
+        min-height: auto;
+    }
+
+    .hero {
+        background: linear-gradient(90deg, rgba(32, 51, 45, 0.95), rgba(32, 51, 45, 0.82)), url("../img/ong-animais.png") 70% center / cover no-repeat;
+    }
+
+    .hero-inner {
+        padding: var(--space-3xl) 0;
+    }
+
+    .hero-copy {
+        grid-column: 1 / -1;
+        padding: 0;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .home-intro,
+    .purpose-grid,
+    .contact-panel,
+    .donation-panel {
+        row-gap: var(--space-lg);
+    }
+
+    .intro-copy,
+    .intro-aside,
+    .contact-panel h2,
+    .contact-details,
+    .donation-copy,
+    .donation-box {
+        grid-column: 1 / -1;
+    }
+
+    .purpose-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card:last-child {
+        grid-column: auto;
+    }
+
+    .page-hero h1,
+    .page-hero p {
+        grid-column: 1 / -1;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .field.full {
+        grid-column: auto;
+    }
+
+    .form-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .form-actions .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .header-inner,
+    .hero-inner,
+    .home-intro,
+    .purpose-grid,
+    .contact-panel,
+    .projects-grid,
+    .donation-panel,
+    .form-layout,
+    .page-hero-inner,
+    .footer-inner {
+        width: min(100% - 2rem, 75rem);
+    }
+
+    .section {
+        padding: var(--space-2xl) 0;
+    }
+
+    .hero-inner {
+        padding: var(--space-2xl) 0;
+    }
+
+    .hero h1 {
+        max-width: 12ch;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .button {
+        width: 100%;
+    }
+
+    .contact-panel,
+    .form-card,
+    .project-card,
+    .donation-copy,
+    .donation-box {
+        padding: var(--space-lg);
+    }
+
+    .footer-brand,
+    .site-footer address,
+    .footer-copy {
+        grid-column: 1 / -1;
+    }
+
+    .footer-inner {
+        row-gap: var(--space-lg);
+    }
+
+    .modal-dialog {
+        padding: var(--space-xl) var(--space-lg);
+    }
+
+    .modal-actions .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    :root {
+        --text-base: 0.9375rem;
+    }
+
+    .brand-mark {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    .hero h1 {
+        font-size: 2.15rem;
+    }
+
+    .page-hero {
+        padding-top: var(--space-2xl);
+    }
+}
